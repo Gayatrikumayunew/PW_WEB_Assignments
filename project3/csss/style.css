@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(burger.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed; 
+    z-index: -1;
+
+}
+.navbar img{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 60px;
+    margin-top: 30px;
+
+
+}
+.list{
+    display: flex;
+    align-items: center;
+    gap: 63px;
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    font-family: 'Red Rose', cursive;
+    
+
+}
+.list li a{
+    text-decoration: none;
+    color: #ffc233;
+}
+.navbar button{
+    padding: 12px 40px;
+    background-color: #ff505f;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Red Rose', cursive;
+
+}
+.hero{
+    text-align: center;
+    max-width: 1154px;
+    margin: 0 auto;
+    margin-top: 119px;
+}
+.hero-heading{
+    font-size: 70px;
+    font-weight: 200;
+    font-style: normal;
+    color: #ffc233;
+    line-height: 100px;
+    font-family: 'Dela Gothic One', cursive;
+    
+}
+.button-large{
+    background-color: #ff505f;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+   font-size: 30px;
+   color: #ffffff;
+   padding: 24px 56px;
+   margin-top: 50px;
+   font-family: 'Red Rose', cursive;
+   cursor: pointer;
+
+}
+.bottom{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
