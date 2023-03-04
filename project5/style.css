@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+    height: 80px;
+    padding: 30px 70px;
+}
+.logopic{
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    border-right: 2px solid white ;
+    cursor: pointer;
+}
+.main-list{
+flex-grow: 1;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 40px;
+}
+.list a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar button{
+    background-color:#ba0cc5 ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+.centercontent{
+    background-image: url(assest/bg.png);
+    background-size: cover;
+    height: 88.7vh; 
+    text-align: center;
+    background-attachment: fixed;
+}
+.heading{
+    margin: 0 auto;
+    padding-top: 162px;
+    font-style: normal;
+    font-size: 70px;
+    font-weight: 800;
+    align-items: center;
+    color: #fff;
+    line-height: 80px;
+   max-width: 750px;
+}
+.para{
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+
+}
+.buttonnew{
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #ba0cc5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 10px;
+}
