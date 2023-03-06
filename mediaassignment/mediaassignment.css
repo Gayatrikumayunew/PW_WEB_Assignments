@@ -1,0 +1,162 @@
+.box{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    border:2px solid rgb(220, 163, 20);
+    
+}
+ .box2, .box3, .box4 ,.box5{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+
+
+}
+.box1{
+    background-color: #26a394;
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.box2{
+    background-color: #008000;
+}
+.box3{
+    background-color:rgb(77, 77, 7);
+}
+.box4{
+    background-color: hsl(197, 71%, 73%);
+}
+.box5{
+    background-color: #ff0000
+    ;
+}
+/* @media screen and (max-width:1440px) {
+    .box5{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: block;
+        height: 550px;
+    }
+    .box4{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    .box5{
+        display: none;
+    }
+    .box2{
+        display: block;
+        height: 550px;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .box5{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display: block;
+        height: 550px;
+    }
+    
+}
+@media screen and (max-width:425px) {
+    .box5{
+        display: block;
+        height: 550px;
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display: none;
+    }
+    
+} */
+@media screen and (min-width:0px) {
+    .box5{
+        display: block;
+        height: 550px;
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display: none;
+    }
+    
+} 
+@media screen and (min-width:425px) {
+    .box5{
+        display: none;
+        }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display: block;
+        height: 550px;
+    }
+    
+} 
+@media screen and (min-width:768px) {
+    .box5{
+        display: none;}
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: block;
+        height: 550px;
+    }
+    .box4{
+        display: none;
+    }
+    
+} 
+
+@media screen and (min-width:1024px) {
+    .box5{
+        display: none;}
+    .box2{
+        display: block;
+        height: 550px;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display: none;
+    }
+    
+} 
