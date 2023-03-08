@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: #fff;
+}
+.line{
+    height: 10px;
+    width: 130px;
+    background-color: #0000ff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    justify-content: center;
+    align-items: center;
+}
+ nav{
+    margin: 20px;
+    
+} 
+nav ul{
+    display: flex;
+    list-style: none;
+     justify-content: right; 
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    font-size: 20px;
+}
+.active{
+    background-color: rgb(100,100,224);
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.first{
+    max-width: 100vw;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+.hand {
+    height: 40px;
+    width: 40px;
+}
+.pc{
+    height: 350px;
+    width: 350px;
+}
+.left h2{
+color: rgb(197, 197, 89);
+}
+
+.hambrger img{
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
+}
+.allprojects{
+    max-width: 22vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 5px;
+    align-items: center; 
+    
+    }
+.allprojects p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.pics{
+    height: 150px;
+    width: 160px;
+    cursor: pointer;
+}
+.pics:hover{
+    height: 155px;
+    width: 165px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 10px;
+
+}
+.footer h1{
+    font-size: 20px;
+}
+.contact img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#picture:hover{
+    height: 35px;
+    width: 35px;
+}
+#picture{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.contact img:hover{
+    height: 25px;
+    width: 25px;
+}
+
+/* media query section  */
+@media screen and (max-width:576px) {
+    nav ul{
+        display: none;
+    }
+    .hambrger {
+        display: block;
+        cursor: pointer;
+    }
+    .first{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+    .allprojects{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        column-gap: 2px;
+
+    }
+    .pics{
+        height: 165px;
+        
+        width: 45vw;
+        cursor: pointer;
+    }
+}
