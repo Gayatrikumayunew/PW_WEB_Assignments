@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="button">Click me</button>
+    <script>
+        const btn = document.getElementById("button");
+        const randomcolor = () => {
+            let val = "0123456789ABCDEF";
+            let cons = "#";
+            for (let i = 0; i < 6; i++) {
+                cons = cons + val[Math.floor(Math.random() * 16)];
+            }
+            return cons;
+        };
+        function changerandomcolor() {
+            document.body.style.backgroundColor = randomcolor();
+        }
+        btn.addEventListener("click", changerandomcolor);
+    </script>
+</body>
+</html>
