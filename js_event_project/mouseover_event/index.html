@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouseover Example</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    div{
+        display: inline;
+        border: 2px dotted rgb(104, 48, 157);
+        background-color: violet;
+        padding: 8px 10px;
+    }
+    </style>
+</head>
+<body>
+    <h3>MouseOver Event</h3>
+    <div >
+        Hover me to see change
+    </div>
+    <script>
+        let e = document.getElementsByTagName("div")[0]; // Get the first <p> element
+        e.addEventListener("mouseover", mouse);
+        e.addEventListener("mouseout",mouse1);
+        
+
+        function mouse() {
+            document.body.style.backgroundColor = "red";
+            e.style.transform = "rotate(-15deg)";
+
+            
+        }
+        function mouse1(){
+            document.body.style.backgroundColor="#fff";
+            e.style.transform = "rotate(0deg)";
+
+        }
+    </script>
+</body>
+</html>

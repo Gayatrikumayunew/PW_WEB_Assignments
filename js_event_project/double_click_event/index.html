@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Click</title>
+    <!-- ading line awesome  -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    </script>
+   <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #file{
+        margin-left: 20;
+        margin-top: 40px;
+        color: yellow;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    span p{
+        color: black;
+        font-size: 12px;
+    }
+
+   </style>
+
+</head>
+
+<body>
+    <span class="las la-file" id="file"><p>Double click on me to open or close</p></span>
+    <div class="card" hidden>
+        <img src="./diwali3.jpg" alt="" style="margin-top: 10px;">
+        <p style="text-align: center;">
+            Happy Diwali
+        </p>
+    </div>
+
+    <script>
+        let span = document.getElementById("file");
+        span.addEventListener("dblclick", toggleElements);
+
+        function toggleElements() {
+            
+            
+            let card = document.querySelector(".card");
+            if(card.hidden){
+                card.hidden = false; 
+                }
+                else{
+                    card.hidden=true;
+                }
+             
+        }
+    </script>
+
+
+
+</body>
+
+</html>

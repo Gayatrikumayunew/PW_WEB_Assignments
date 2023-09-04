@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyup-keydown</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #a18888;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #e4d0d0;
+            padding: 8px;
+            justify-content: center;
+            text-align: center;
+            background-color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input type="text" id="textInput">
+        <p>Enter something</p>
+    </div>
+    <div id="output"></div>
+    <script>
+        let inputElement = document.getElementById("textInput");
+        let outputElement = document.getElementById("output");
+
+        inputElement.addEventListener("keyup", key1);
+        inputElement.addEventListener("keydown", key);
+
+        function key1(event) {
+            outputElement.innerHTML += "Key up: " + event.key + "<br>";
+        }
+
+        function key(event) {
+            outputElement.innerHTML += "Key down: " + event.key + "<br>";
+        }
+    </script>
+</body>
+</html>
